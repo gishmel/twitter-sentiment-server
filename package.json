@@ -1,0 +1,53 @@
+{
+  "name": "Twitter_Sentiments_Giphy",
+  "version": "0.1.0",
+  "description": "Allows for search through Tweets using Twitter Search API and includes saving those tweets along with their sentiment analysis.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "./node_modules/mocha/bin/mocha --reporter progress --compilers js:babel-register \"./**/*.spec.js\""
+  },
+  "keywords": [
+    "koa",
+    "mongodb"
+  ],
+  "author": "Luke A. Greenleaf",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.22.2",
+    "babel-register": "^6.22.0",
+    "btoa": "^1.1.2",
+    "kcors": "^2.2.0",
+    "koa": "^2.0.0-alpha.7",
+    "koa-body": "^1.5.0",
+    "koa-request": "^1.0.0",
+    "koa-router": "^7.0.1",
+    "metamagical": "^0.1.3",
+    "metamagical-interface": "^3.4.0",
+    "metamagical-repl": "^0.3.0",
+    "mongoose": "^4.6.0",
+    "oauth": "^0.9.15",
+    "request-promise": "^4.1.1",
+    "sentiment": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.16.0",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-es2017": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "babel-preset-stage-2": "^6.16.0",
+    "babel-preset-stage-3": "^6.16.0",
+    "koa-bodyparser": "^2.2.0",
+    "koa-cors": "0.0.16",
+    "koa-logger": "^1.3.0",
+    "mocha": "^3.1.2",
+    "node-uuid": "^1.4.7",
+    "nodemon": "^1.10.2",
+    "should": "^11.1.1",
+    "supertest": "^2.0.0"
+  }
+}
