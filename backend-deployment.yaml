@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: twitter-sentiment-server-d
+  labels:
+    app: twitter-sentiment-server
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: twitter-sentiment-server
+        tier: backend
+    spec:
+      containers:
+      - name: twitter-sentiment-server-app
+        image: gcr.io/twitter-sentiment-app/twitter-sentiment-server
+        imagePullPolicy: Always
+        ports:
+        - name: http-server
+          containerPort: 8080
