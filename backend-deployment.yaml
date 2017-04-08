@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: twitter-sentiment-server-app
-        image: gcr.io/twitter-sentiment-app/twitter-sentiment-server
+        image: gcr.io/lukegreenleaf-163901/github-gishmel-twitter-sentiment-server
         imagePullPolicy: Always
         ports:
         - name: http-server
